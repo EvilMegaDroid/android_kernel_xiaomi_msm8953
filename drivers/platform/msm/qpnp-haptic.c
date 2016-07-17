@@ -2851,3 +2851,4 @@ module_exit(qpnp_haptic_exit);
 
 MODULE_DESCRIPTION("qpnp haptic driver");
 MODULE_LICENSE("GPL v2");
+
