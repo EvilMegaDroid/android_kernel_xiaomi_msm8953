@@ -1,24 +1,26 @@
-aee5fd3 Revert "msm8953: overclocking with cmdline option"
-0a7be53 Revert "cpufreq: clock to maximum frequency by default"
-195ee7d BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
-19282ad UPSTREAM: fscrypt: fix dereference of NULL user_key_payload
-cab750f Update spectrum
-51f3d55 kernel: Nuke GENTLE_FAIR_SLEEPERS sysfs
-5b487a9 cpu-hotplug: Always use real time scheduling when hotplugging a CPU
-90242ba2 initramfs: add skip_override parameter
-b500baf cpu-hotplug: convert cpu_hotplug_disabled to a counter
-e00bfab sched: Prevent recursion in io_schedule()
-a2c62e7 uapi: fix eventpool.h double declaration
-9c78ab5 FROMLIST: pstore: drop pmsg bounce buffer
-9060e0b fs/pstore: fix compilation warning
-697eab2 pstore: Fix the ramoops module parameters update
-a5254af fs/pstore: initialize pmsg from device tree
-1b6f71d fs:pstore:ramoops: config mem from dt
-80f8049 crypto: msm: Select CRYPTO_DEV_QCE50 for the right ARCHs
-c67f018 pinctrl: qcom: Correct ARCH dependencies for pinctrl
-ee98cbd iommu: Correct ARCH dependencies of MSM_IOMMU_V1
-744ba66 clk: msm: Build the right clock drivers for the right ARCH
-55eb4cc arm64: Put Cortex-A53 optimization flags for supported ARCHs
-b71c2ee1 staging: prima: Update to CAF LA.UM.5.6.r1-06100-89xx.0
-aed13aa staging: prima: Update to CAF LA.UM.5.6.r1-06000-89xx.0
-90bf123 New ardeno idler
+[33mdfd8ae0[m Derp
+[33md8a0c59[m Lets see will this add 2.2 ghz
+[33maee5fd3[m Revert "msm8953: overclocking with cmdline option"
+[33m0a7be53[m Revert "cpufreq: clock to maximum frequency by default"
+[33m195ee7d[m BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+[33m19282ad[m UPSTREAM: fscrypt: fix dereference of NULL user_key_payload
+[33mcab750f[m Update spectrum
+[33m51f3d55[m kernel: Nuke GENTLE_FAIR_SLEEPERS sysfs
+[33m5b487a9[m cpu-hotplug: Always use real time scheduling when hotplugging a CPU
+[33m90242ba2[m initramfs: add skip_override parameter
+[33mb500baf[m cpu-hotplug: convert cpu_hotplug_disabled to a counter
+[33me00bfab[m sched: Prevent recursion in io_schedule()
+[33ma2c62e7[m uapi: fix eventpool.h double declaration
+[33m9c78ab5[m FROMLIST: pstore: drop pmsg bounce buffer
+[33m9060e0b[m fs/pstore: fix compilation warning
+[33m697eab2[m pstore: Fix the ramoops module parameters update
+[33ma5254af[m fs/pstore: initialize pmsg from device tree
+[33m1b6f71d[m fs:pstore:ramoops: config mem from dt
+[33m80f8049[m crypto: msm: Select CRYPTO_DEV_QCE50 for the right ARCHs
+[33mc67f018[m pinctrl: qcom: Correct ARCH dependencies for pinctrl
+[33mee98cbd[m iommu: Correct ARCH dependencies of MSM_IOMMU_V1
+[33m744ba66[m clk: msm: Build the right clock drivers for the right ARCH
+[33m55eb4cc[m arm64: Put Cortex-A53 optimization flags for supported ARCHs
+[33mb71c2ee1[m staging: prima: Update to CAF LA.UM.5.6.r1-06100-89xx.0
+[33maed13aa[m staging: prima: Update to CAF LA.UM.5.6.r1-06000-89xx.0
+[33m90bf123[m New ardeno idler
