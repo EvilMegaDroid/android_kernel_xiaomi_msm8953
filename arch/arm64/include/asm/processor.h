@@ -138,7 +138,6 @@ unsigned long get_wchan(struct task_struct *p);
 
 #define cpu_relaxed_read(p)		ldax32(p)
 #define cpu_relaxed_read_long(p)	ldax64((u64 *)p)
-#define cpu_read_relax()		wfe()
 
 /* Thread switching */
 extern struct task_struct *cpu_switch_to(struct task_struct *prev,

@@ -622,14 +622,35 @@ KBUILD_CFLAGS	+= $(call cc-disable-warning, int-in-bool-context)
 KBUILD_CFLAGS	+= $(call cc-option,-fno-PIE)
 KBUILD_AFLAGS	+= $(call cc-option,-fno-PIE)
 
+# GCC 7.x warnings
+KBUILD_CFLAGS	+= $(call cc-disable-warning, bool-operation)
+KBUILD_CFLAGS	+= $(call cc-disable-warning, memset-elt-size)
+KBUILD_CFLAGS	+= $(call cc-disable-warning, parentheses)
+ 
+# Needed to unbreak GCC 7.x and above
+KBUILD_CFLAGS += $(call cc-option,-fno-store-merging,)
+
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS	+= -Os $(call cc-disable-warning,maybe-uninitialized,)
 else
 KBUILD_CFLAGS	+= -O2
 endif
 
-# Tell gcc to never replace conditional load with a non-conditional one
-KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
+ # Kill array bound warnings
+ KBUILD_CFLAGS	+= $(call cc-disable-warning,array-bounds,)
+ 
+ # Kill misleading indention errors
+ KBUILD_CFLAGS   += -Wno-misleading-indentation
+ 
+ # Tell gcc to never replace conditional load with a non-conditional one
+ KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
+ 
+ # Needed to unbreak GCC 7.x and above
+ KBUILD_CFLAGS   += $(call cc-option,-fno-store-merging,)
+ 
+
+# Kill array bound warnings
+KBUILD_CFLAGS	+= $(call cc-disable-warning,maybe-uninitialized,)
 
 ifdef CONFIG_READABLE_ASM
 # Disable optimizations that make assembler listings hard to read.
