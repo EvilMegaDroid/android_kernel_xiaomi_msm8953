@@ -1,3 +1,76 @@
+[33mb3dd8d7[m snmp: add some more MIB definitions for CDG
+[33m1e8ae5f[m cpuquiet: fix misleading-indentation
+[33m90fad36[m CHROMIUM: PM / QoS: add min/max online cpus as PM QoS parameter
+[33m2c79216[m cpuquiet: make sure gets compiled
+[33m2231b35[m cpuquiet: make sure compiled
+[33m26f0263[m tcp: cdg: use div_u64()
+[33m120605c[m tcp: add CDG congestion control
+[33md192592[m tcp: export tcp_enter_cwr()
+[33m7bb6f9a[m vmstat: Reduce time interval to stat update on idle cpu
+[33m6c9bcfe[m Override Allowed TCP Congestion Control Algorithms
+[33maae0627[m cpuquiet: Use device_{on/off}line(dev) function for up/downcore
+[33m42f252f[m cpuquiet: fix attributes' permission
+[33mc5e9b10[m rqbalance : ensure MAX cpu is set when storing nr_run_thresholds from userspace
+[33ma71cee9[m rqbalance: Add missing header inclusion
+[33mba53492[m cpuquiet: Set max CPUs from Power and Thermal profiles
+[33m0954d4c[m cpuquiet: Add CPUQuiet MSM driver
+[33m97168a6[m drivers: cpuquiet: update rqbalance
+[33m35a873f[m drivers: cpuquiet: Add rqbalance governor
+[33m6cb7370[m CHROMIUM: cpuquiet: Don't hold cpuquiet_lock in cpuquiet_wake_quiesce_cpu()
+[33mbfb3a65[m CHROMIUM: cpuquiet: Remove useless runnables_lock
+[33m13239a9[m CHROMIUM: cpuquiet: Get rid of hotplug_timeout attr dead code
+[33m8b9b039[m CHROMIUM:cpuquiet: Get rid of CONFIG_CPU_QUIET_STATS
+[33m55ef683[m CHROMIUM:cpuquiet: Fix syntax errors for cpuquiet_(un)register_attrs()
+[33m06ba888[m CHROMIUM:cpuquiet: Move definition of cpuquiet_lock
+[33mffe83b3[m CHROMIUM: cpuquiet: Export min/max CPUs to userspace
+[33mf8f2ca3[m CHROMIUM: cpuquiet: Clean up CPUQUIET_STATS ifdefs in cpuquiet.c
+[33m0aae59c[m CHROMIUM: cpuquiet: Specify cpuquiet platform info as const
+[33m4d5ff07[m CHROMIUM: cpuquiet: Reordering of inits/removes
+[33m3c9969d[m CHROMIUM: cpuquiet: Fix cpuquiet_add_dev error bug
+[33m8b93394[m CHROMIUM: cpuquiet: Update/Add documentation to cpuquiet
+[33m55c0b3b[m CHROMIUM: cpuquiet: Update label name
+[33maa2d4aa[m CHROMIUM: cpuquiet: Remove useless ret variable
+[33m72cafe6[m CHROMIUM: cpuquiet: Rename to HOTPLUG_TIMEOUT
+[33md372274[m CHROMIUM: cpuquiet: Move cpuquiet stats code to sysfs.c
+[33m1b30f0c[m CHROMIUM: cpuquiet: Refactor cpuquiet wake, quiesce functions
+[33m8566341[m CHROMIUM: cpuquiet: Extract cpuquiet_{wake,quiesce}_cpu()
+[33m3eef1a7[m CHROMIUM: cpuquiet: Make cpuquiet platform agnostic
+[33mb0d2b1a[m CHROMIUM: cpuquiet: Add support for cpuquiet on X86 devices.
+[33m54d7b7b[m CHROMIUM: cpuquiet: Extract non-arch specific code from cpuquiet-tegra into cpuquiet-common.c.
+[33mafb5ae5[m CHROMIUM: cpuquiet: Add support for arch specific sampling rate.
+[33mfe5f22c[m CHROMIUM: cpuquiet: Expose hotplug overhead statistics.
+[33m5ed60e8[m CHROMIUM: cpuquiet: add Tegra driver
+[33mc92758f[m CHROMIUM: cpuquiet: add sysfs support
+[33m9f61b9f[m CHROMIUM: cpuquiet: Introduce cpuquiet framework
+[33m9f30f00[m Fix derp
+[33m0cd62fc[m defconfig: Switch to simple thermal
+[33m2005259[m ARM: dts: msm8953: Add support for msm-thermal-simple by sultanxda
+[33m61a6749[m msm: thermal: simple: Ensure validate_cpu_freq() only uses valid freqs
+[33ma7134d2[m msm: thermal: simple: Restore the user's maxfreq after throttling
+[33m519e81c[m msm: thermal: simple: Make get_valid_cpufreq() usage hotplug-safe
+[33m72cdc1f[m msm: thermal: simple: Make worker and notifier logic more robust
+[33m1c62820[m msm: thermal: simple: Remove user_maxfreq feature
+[33mc6864f6[m msm: thermal: simple: Fix checkpatch.pl warnings and errors
+[33m6adfea4[m msm: thermal: simple: Validate throttle frequencies
+[33mee146a4[m msm: thermal: simple: Remove TSENS dependency
+[33m8a63f61[m msm: thermal: simple: Use msm8994 core mask
+[33mcee4fe2[m msm: thermal: simple: Increase max. number of thermal zones to 12
+[33me97d833[m msm: thermal: simple: Add support for individual freqs per cluster
+[33m716feac[m msm: thermal: simple: Remove WQ_NON_REENTRANT
+[33m4a16a74[m msm: thermal: simple: Fix lack of throttling when temp suddenly jumps
+[33ma192f03[m msm: thermal: simple: Remove unnecessary continue
+[33m8cb4056[m msm: thermal: simple: Use fixed-width integer types for local variables
+[33m94db7c5e3[m msm: thermal: simple: Add support for 8 thermal throttle zones
+[33mf8744d0[m msm: thermal: simple: Refactor code style
+[33m9e71c8c[m msm: thermal: simple: Set minfreq to maxfreq if minfreq > maxfreq
+[33mb0a43e5[m msm: thermal: simple: Remove inefficient code
+[33m27a77b4[m msm: thermal: simple: Use VADC device for temperature polling
+[33me3fa3ad[m msm: thermal: simple: Clean up some variable naming
+[33m5886503[m msm: thermal: simple: Add sysfs node to manually control maxfreq
+[33mc680644[m msm: thermal: simple: Remove unnecessary check
+[33m0618657[m thermal: msm: simple: Clean up 'enabled' sysfs node
+[33m1f2e4a4[m thermal: msm: simple: Fix on/off switch
+[33m1a4f1d2[m thermal: Add simple standalone MSM thermal solution
 [33md766a03[m Speed up console framebuffer imageblit function
 [33maa37cd8[m PM / devfreq: Fix memory leak when fail to register device
 [33mad87060[m PM / devfreq: remove double put_device
