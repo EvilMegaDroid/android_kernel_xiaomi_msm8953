@@ -649,12 +649,6 @@ struct rq {
 	u64 nr_running_integral;
  	seqcount_t ave_seqcnt;
 
-#ifdef CONFIG_CPU_QUIET
-	/* time-based average load */
-	u64 nr_last_stamp;
-	u64 nr_running_integral;
-	seqcount_t ave_seqcnt;
-#endif
 	/* capture load from *all* tasks on this cpu: */
 	struct load_weight load;
 	unsigned long nr_load_updates;
@@ -1939,7 +1933,7 @@ static inline void add_nr_running(struct rq *rq, unsigned count)
 	write_seqcount_begin(&rq->ave_seqcnt);
 	rq->nr_running_integral = do_nr_running_integral(rq);
 	rq->nr_last_stamp = rq->clock_task;
-	__add_nr_running(rq, count);
+	_add_nr_running(rq, count);
 	write_seqcount_end(&rq->ave_seqcnt);
 }
 
@@ -1948,7 +1942,7 @@ static inline void sub_nr_running(struct rq *rq, unsigned count)
 	write_seqcount_begin(&rq->ave_seqcnt);
 	rq->nr_running_integral = do_nr_running_integral(rq);
 	rq->nr_last_stamp = rq->clock_task;
-	__sub_nr_running(rq, count);
+	_sub_nr_running(rq, count);
 	write_seqcount_end(&rq->ave_seqcnt);
 }
 #else
