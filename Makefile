@@ -641,7 +641,11 @@ endif
  
  # Kill misleading indention errors
  KBUILD_CFLAGS   += -Wno-misleading-indentation
- 
+
+ # Kill misleading errors
+KBUILD_CFLAGS   += -Wno-duplicate-decl-specifier 
+KBUILD_CFLAGS   += -Wno-unused-variable
+
  # Tell gcc to never replace conditional load with a non-conditional one
  KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
  
